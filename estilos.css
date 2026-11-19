@@ -1,0 +1,344 @@
+*{
+    font-family: "Fredoka", sans-serif;
+    margin: 0;
+}
+
+body{
+    background-color: #B4B4B4;
+    /* vamos a poner position: relative porque en el footer tendremos 
+    que ponerle position: absolute para que se pegue abajo del todo */
+    position: relative;
+    min-height: 100vh;
+}
+
+header{
+    background-color: #545454;
+    height: 100px;
+}
+
+/* ALTA DE HORARIOS */
+#tituloIzquierda{
+    margin-top: 10px;
+    float: left;
+}
+
+header h1{
+    margin-left: 50px;
+    padding: 20px;
+}
+
+/* ivaanrodriiguezzz configuracion */
+#interfazDerecha{
+    margin-top: 10px;
+    float: right;
+    margin-right: 50px;
+}
+
+header a{
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+    border-radius: 100px;
+    background-color: #737373;
+}
+
+/* MAIN */
+#cajaClase{
+    width: 500px;
+    /* arriba derecha abajo izquierda */
+    margin: 100px auto 60px auto;
+    padding: 20px;
+    background-color: #545454;
+    border-radius: 30px;
+}
+
+#cajaClase h1{
+    padding: 20px;
+    font-size: 4em;
+}
+
+#cajaClase select{
+    /* el select tiene por defecto inline-block por eso le decimos que actue como un bloque */
+    display: block;
+    margin: 10px auto 20px auto;
+    width: 70%;
+    padding: 5px;
+    font-size: 1.2em;
+    text-align: center;
+    border-radius:30px;
+}
+
+/* BOTON Enviar */
+#botonEnviar{
+    background-color: #00D756;
+    border: 2px solid black;
+    margin: 0 auto;
+    text-align: center;
+    width: 200px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    clear: both;
+}
+
+#botonEnviar input{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 10px 20px;
+    background-color: #00D756;
+    border: 0;
+    cursor: pointer;
+}
+
+/* PIE DE PAGINA */
+footer{
+    background-color: #545454;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer h1{
+    padding: 40px;
+    float: right;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+#cajaAnadir{
+    width: 400px;
+    /* arriba derecha abajo izquierda */
+    margin: 100px auto 60px auto; /* Vuelve a centrarse en la pantalla */
+    padding: 20px;
+    background-color: #545454;
+    border-radius: 30px;
+    /* Le ponemos display: flow-root para que se adhiera bien el tamaño del alto a las cajas*/
+    display: flow-root;
+}
+
+#cajaAnadir h1{
+    text-align: center;
+    font-size: 1.5em;
+    margin: 20px;
+}
+
+#cajaAsignatura{
+    margin: 20px 0px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Label Asignatura */
+#cajaAsignatura label{
+    margin-right: 25px;
+    font-size: 1.2em;
+}
+
+/* Select Asignatura */
+#cajaAsignatura select{
+    width: 45%;
+    padding: 5px 10px;
+    font-size: 0.65em;
+    text-align: center;
+    border-radius:30px;
+}
+
+#cajaAsignatura a{
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 1em;
+    text-align: center;
+    border-radius: 50px;
+    background-color: rgb(233, 233, 237);
+    text-decoration: none;
+    color: black;
+}
+
+#cajaHorario{
+    margin: 20px 0px;
+    display: flow-root;
+}
+
+#cajaDia{
+    float: left;
+    margin-left: 45px;
+}
+
+/* Label Dia */
+#labelDia{
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+/* Input Dia */
+#inputDia{
+    width: 80px;
+    padding: 5px;
+    font-size: 1em;
+    text-align: center;
+    border-radius:30px;
+}
+
+#cajaHora{
+    float: right;
+    margin-right: 45px;
+}
+
+/* Label Hora */
+#labelHora{
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+/* Input Hora */
+#inputHora{
+    width: 80px;
+    padding: 5px;
+    font-size: 1em;
+    text-align: center;
+    border-radius:30px;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+footer img{
+    width: 30px;
+    padding: 10px;
+    background-color: #737373;
+    float:left;
+    border-radius: 50px;
+    margin: 32px;
+}
+
+#contenedorCentro{
+    position: relative; 
+    width: 100%;
+}
+
+#cajaCurso{
+    position: absolute;
+    top: 1px;
+    right: 200px;
+    border: 3px solid black;
+    border-radius: 40px;
+    padding: 15px 35px;
+    background-color: #B4B4B4;
+}
+
+#cajaCurso h2{
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+    margin: 0;
+}
+
+#cajaAbreviatura{
+    margin-bottom: 20px;
+}
+
+#cajaAsignatura input{
+    width: 200px;
+    padding: 5px;
+    font-size: 1em;
+    text-align: center;
+    border-radius:30px;
+}
+
+#cajaAbreviatura label{
+    margin-left: 35px;
+    margin-right: 30px;
+    font-size: 1.2em;
+}
+
+#cajaAbreviatura input{
+    width: 200px;
+    padding: 5px;
+    font-size: 1em;
+    text-align: center;
+    border-radius:30px;
+}
+
+/*HORARIO*/
+table{
+    font-size: 1.5em;
+    text-align: center;
+    height: 700px;
+    border: 1px solid rgb(84, 84, 84);
+    margin: 10px auto;
+}
+
+th{
+    background-color: rgb(115, 115, 115);
+}
+
+th,tr,td{
+    width: 220px;
+    border: 1px solid rgb(84, 84, 84);
+}
+
+#filaRecreo{
+    font-weight: bold;
+    background-color: rgb(115, 115, 115);
+}
+
+/* Añadir al final de estilos.css */
+#botonEnviar.boton-eliminar {
+    background-color: #FF4C4C;
+    border-color: #FF4C4C;
+}
+
+#botonEnviar.boton-eliminar input {
+    background-color: #FF4C4C;
+}
+
+#botonEnviar.boton-anadir input {
+    background-color: #FF4C4C;
+}
+
+.boton-flotante {
+    position: absolute;
+    top: 10px;
+    background-color: #737373;
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 50px;
+    border: 2px solid black;
+    display: inline-block;
+}
+
+.boton-modificar {
+    right: 120px;
+}
+
+.boton-eliminar {
+    right: 40px;
+}
+
+.boton-anadir {
+    right: 200px;
+}
+
+#caja_mensaje{
+    width: 800px;
+    height: 100px;
+    border-radius: 30px;
+    border: 3px solid rgb(76, 185, 1);
+    background-color: #00D756;
+    margin: 300px auto;
+}
+
+#mensaje_correcto{
+    display: block;
+    text-align: center;
+    padding: 30px;
+}
